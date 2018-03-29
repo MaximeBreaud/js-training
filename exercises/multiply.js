@@ -1,14 +1,33 @@
 'use strict'
 
 /*
- * Create a function `multiply` that takes two number arguments
- * and returns the result of the multiplication of those two.
- * But you must do this without using the operators * or /
- *
- * @notions Primitive and Operators, Functions, While
+  Create a function `multiply` that takes two number arguments
+  and returns the result of the multiplication of those two.
+  But you must do this without using the operators * or /
+ 
+  @notions Primitive and Operators, Functions, While
  */
 
 // Your code :
+
+function multiply(num1, num2) {
+    let i = 0
+    let numResult = 0
+
+    if (0 < num1) {
+        while (i < num1) {
+            numResult = num2 + numResult
+            i++;
+        } return numResult
+    } else {
+        while (i > num1) {
+            numResult = num2 + numResult
+            i--;
+        } return -numResult
+    }
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')
