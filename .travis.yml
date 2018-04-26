@@ -1,6 +1,5 @@
-script: ./tester basics math get
+script: ./tester basics math gets
 language: node_js
 node_js:
   - "node"
 
-  
