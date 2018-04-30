@@ -9,9 +9,13 @@
 
 // Your code :
 
-const circular = {
-    
-};
+
+let circular = {
+    get circular() {
+        return circular
+    }
+}
+
 
 //* Begin of tests
 const assert = require('assert')
