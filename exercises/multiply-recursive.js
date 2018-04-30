@@ -11,6 +11,7 @@
 
 // Your code :
 function multiply(a, b) {
+    if (a === 0 || b === 0) return 0;
     var result = (a < 0) ? (b > 0) ? -1 : 1 : (b < 0) ? -1 : 1;
 
     a = (a < 0) ? -a : a;
